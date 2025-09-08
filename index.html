@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - 2D Assets & Game Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .assets-grid, .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+        .asset, .game {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 1rem;
+            text-align: center;
+        }
+        .asset img, .game img {
+            max-width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+        }
+        .game a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .game a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #222;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Showcasing 2D Assets & Game Projects</p>
+    </header>
+    <main>
+        <section>
+            <h2>2D Assets</h2>
+            <div class="assets-grid">
+                <div class="asset">
+                    <img src="assets/character_sprite.png" alt="Character Sprite">
+                    <h3>Character Sprite</h3>
+                    <p>Hand-drawn character sprite for platformer games.</p>
+                </div>
+                <div class="asset">
+                    <img src="assets/background_forest.png" alt="Forest Background">
+                    <h3>Forest Background</h3>
+                    <p>Layered forest background for side-scrolling games.</p>
+                </div>
+                <div class="asset">
+                    <img src="assets/ui_buttons.png" alt="UI Buttons">
+                    <h3>UI Buttons</h3>
+                    <p>Custom UI button set for game interfaces.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Game Projects</h2>
+            <div class="games-grid">
+                <div class="game">
+                    <img src="games/platformer_demo.png" alt="Platformer Demo">
+                    <h3>Platformer Demo</h3>
+                    <p>A simple 2D platformer built with HTML5 and JavaScript.</p>
+                    <a href="https://github.com/evtj3/platformer-demo" target="_blank">View Project</a>
+                </div>
+                <div class="game">
+                    <img src="games/puzzle_game.png" alt="Puzzle Game">
+                    <h3>Puzzle Game</h3>
+                    <p>Casual puzzle game featuring custom 2D assets.</p>
+                    <a href="https://github.com/evtj3/puzzle-game" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 evtj3. All rights reserved.
+    </footer>
+</body>
+</html>
